@@ -53,7 +53,7 @@ cd employee-task-tracker
 
 2. Create a `.env` file in the `/server` directory based on `.env.example`:
    ```
-   MONGODB_URI=mongodb+srv://dkmr006_db_user:fIY7XbaK1L9LGi0c@cluster0.hcxskcz.mongodb.net/?appName=Cluster0
+   MONGODB_URI=mongodb+srv://<db_user_id>:<db_password>@cluster0.hcxskcz.mongodb.net/?appName=Cluster0
    JWT_SECRET=your_super_secret_key_123
    PORT=5000
    CLIENT_URL=http://localhost:5173
