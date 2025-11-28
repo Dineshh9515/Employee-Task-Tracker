@@ -31,6 +31,16 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+// put this after app is created and middleware is applied
+
+app.get("/", (req, res) => {
+  res.send("Employee Task Tracker API is running");
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 
 // Routes
 app.use('/api/auth', authRoutes);
